@@ -1,0 +1,115 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão da página */
+    background: url('../imagens/fundo.jpg') no-repeat center center fixed; /* Define a imagem de fundo e garante que ela não se repita */
+    background-size: cover; /* Faz com que a imagem de fundo cubra toda a área da tela */
+    margin: 0; /* Remove as margens padrão do body */
+    padding: 0; /* Remove o padding padrão do body */
+    color: #000000; /* Define a cor do texto como branco para melhor contraste com o fundo */
+    display: flex; /* Usa Flexbox para alinhar o conteúdo */
+    flex-direction: column; /* Alinha o conteúdo em uma coluna */
+    align-items: flex-end; /* Alinha o conteúdo horizontalmente à direita */
+    min-height: 100vh; /* Garante que o body cubra toda a altura da tela */
+}
+
+/* Container principal para conteúdo */
+main {
+    width: 300px; /* Define a largura do main como 300px */
+    background-color: rgba(10, 10, 10, 0.9); /* Adiciona um fundo branco e quase opaco para melhorar a legibilidade */
+    padding: 50px; /* Adiciona padding interno ao main */
+    border-radius: 10px; /* Adiciona bordas arredondadas ao main */
+    box-shadow: 0 4px 8px rgba(255, 254, 254, 0.911); /* Adiciona uma sombra sutil ao redor do main */
+    margin-top: 40px; /* Adiciona espaço acima do main */
+    margin-right: 30px; /* Adiciona espaço à direita do main */
+}
+
+/* Cabeçalho */
+header {
+    background-color: rgba(51, 51, 51, 0.7);
+    color: #ffffff;
+    text-align: center; /* Centraliza o texto horizontalmente */
+    padding: 20px;
+    width: 100%; /* Garante que o cabeçalho ocupe toda a largura disponível */
+    margin: 0 auto; /* Centraliza o cabeçalho verticalmente na página */
+}
+
+header h1 {
+    margin: 0; /* Remove a margem padrão do título */
+}
+
+/* Seções */
+section {
+    margin-bottom: 40px; /* Adiciona espaço abaixo de cada seção */
+}
+
+/* Campo de pesquisa */
+input[type="text"] {
+    width: 87%; /* Define a largura do campo de texto como 100% da largura do container */
+    padding: 10px; /* Adiciona padding interno ao campo de texto */
+    font-size: 13px; /* Define o tamanho da fonte do campo de texto */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao campo de texto */
+    border: 1px solid #ccc; /* Define uma borda cinza clara ao redor do campo de texto */
+}
+
+/* Botão de pesquisa */
+button {
+    padding: 10px 20px; /* Adiciona padding interno ao botão */
+    background-color: #2850a7; /* Define a cor de fundo do botão */
+    color: #ffffff; /* Define a cor do texto no botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+    cursor: pointer; /* Muda o cursor para uma mão ao passar sobre o botão */
+    font-size: 16px; /* Define o tamanho da fonte do botão */
+}
+
+button:hover {
+    background-color: #218838; /* Muda a cor de fundo do botão ao passar o mouse sobre ele */
+}
+
+/* Resultados da pesquisa */
+.resultados-pesquisa {
+    margin-top: 20px; /* Adiciona espaço acima da seção de resultados */
+    padding: 20px; /* Adiciona padding interno à seção de resultados */
+    background-color: rgba(255, 255, 255, 0.9); /* Adiciona um fundo branco e quase opaco à seção de resultados para boa legibilidade */
+    border-radius: 10px; /* Adiciona bordas arredondadas à seção de resultados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil ao redor da seção de resultados */
+}
+
+.item-resultado {
+    margin-bottom: 20px; /* Adiciona espaço abaixo de cada item de resultado */
+    padding: 10px; /* Adiciona padding interno aos itens de resultado */
+    background-color: #f9f9f9; /* Define um fundo cinza claro para os itens de resultado */
+    border-radius: 5px; /* Adiciona bordas arredondadas aos itens de resultado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil ao redor dos itens de resultado */
+}
+
+.item-resultado h2 {
+    font-size: 18px; /* Define o tamanho da fonte do título do resultado */
+    margin-bottom: 10px; /* Adiciona espaço abaixo do título do resultado */
+}
+
+.item-resultado a {
+    color: #007bff; /* Define a cor do link dentro do resultado */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.item-resultado a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao link quando o mouse está sobre ele */
+}
+
+.descricao-meta {
+    font-size: 14px; /* Define o tamanho da fonte da descrição dos resultados */
+    color: #666; /* Define a cor da descrição como cinza escuro para contraste com o fundo claro */
+    margin-bottom: 10px; /* Adiciona espaço abaixo da descrição */
+}
+
+/* Rodapé */
+footer {
+    background-color: rgba(51, 51, 51, 0.7); /* Adiciona um fundo escuro e semi-transparente ao rodapé para melhorar a legibilidade */
+    color: #fff; /* Define a cor do texto no rodapé */
+    text-align: center; /* Centraliza o texto do rodapé */
+    padding: 10px 20px; /* Adiciona padding ao redor do conteúdo do rodapé */
+    position: absolute; /* Define a posição como absoluta para posicionar o rodapé */
+    bottom: 0; /* Define o rodapé para estar no fundo da página */
+    width: 100%; /* Define a largura do rodapé como 100% da tela */
+}
